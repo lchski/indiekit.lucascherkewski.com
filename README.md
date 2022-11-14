@@ -7,4 +7,9 @@
 	- currently using the Atlas free tier, may need to bump to serverless for reliability, but want to see usage first
 	- set IP range to 0.0.0.0/0 (open to the internet), since we don't know the Railway IP address—this is another argument in favour of moving to, e.g., GCP, where we can better isolate this stuff
 - set up env vars:
-	- application.mongodbUrl
+	- [MONGO_URL](https://getindiekit.com/configuration/#application-mongodburl-url)
+	- [GITHUB_TOKEN](https://www.npmjs.com/package/@indiekit/store-github), [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+		- did a fine-grained token (the new kind), scoped to just my site and this repo
+		- permissions: `Read and write` for `Contents`, otherwise default
+	- [MASTODON_ACCESS_TOKEN](https://www.npmjs.com/package/@indiekit/syndicator-mastodon), via `/settings/applications` in Mastodon
+		- permissions: `read:statuses`, `write:media`, `write:statuses`
