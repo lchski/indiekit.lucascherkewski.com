@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "indiekit.lucascherkewski.com",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "indiekit",
+    "indieweb"
+  ],
+  "author": {
+    "name": "Lucas Cherkewski",
+    "url": "https://lucascherkewski.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lchski/indiekit.lucascherkewski.com.git"
+  },
+  "homepage": "https://indiekit.lucascherkewski.com",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.config.cjs",
+  "scripts": {
+    "start": "indiekit serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@indiekit/indiekit": "^1.0.0-alpha.12",
+    "@indiekit/store-github": "^1.0.0-alpha.12",
+    "@indiekit/syndicator-mastodon": "^1.0.0-alpha.12"
+  }
+}
