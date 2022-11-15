@@ -23,6 +23,7 @@ module.exports = {
 	"@indiekit/store-github": {
 		user: "lchski",
 		repo: "lucascherkewski.com",
+		branch: "master",
 	},
 	"@indiekit/syndicator-mastodon": {
 		checked: false,
