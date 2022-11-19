@@ -26,7 +26,7 @@ module.exports = {
 		branch: "master",
 	},
 	"@indiekit/syndicator-mastodon": {
-		checked: false,
+		checked: true,
 		forced: false,
 		url: "https://mastodon.social",
 		user: "lchski",
