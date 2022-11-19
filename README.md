@@ -13,3 +13,9 @@
 		- permissions: `Read and write` for `Contents`, otherwise default
 	- [MASTODON_ACCESS_TOKEN](https://www.npmjs.com/package/@indiekit/syndicator-mastodon), via `/settings/applications` in Mastodon
 		- permissions: `read:statuses`, `write:media`, `write:statuses`
+- setting up syndicating:
+	- plugin is built-in—if you try to load `/syndicate`, you’ll get a 404, because the route is only configured for POST requests
+	- [per the docs, syndication doesn’t happen automatically](https://getindiekit.com/introduction#share)—recommend setting up a post-deploy hook
+	- in Netlify site settings, `Build & deploy`, `Deploy notifications`, set up an outgoing webhook:
+		- `Event to listen for`: `Deploy succeeded`
+		- `URL to notify`: `https://indiekit.lucascherkewski.com/syndicate?token={token from indiekit status page}`
