@@ -7,6 +7,7 @@ module.exports = {
 		"@indiekit/preset-jekyll",
 		"@indiekit/store-github",
 		"@indiekit/syndicator-mastodon",
+		"@indiekit/endpoint-syndicate",
 	],
 	publication: {
 		me: "https://lucascherkewski.com",
@@ -37,7 +38,7 @@ module.exports = {
 	},
 	"@indiekit/syndicator-mastodon": {
 		checked: true,
-		forced: false,
+		forced: true,
 		url: "https://mastodon.social",
 		user: "lchski",
 	},
