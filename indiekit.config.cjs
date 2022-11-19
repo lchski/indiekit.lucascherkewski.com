@@ -7,7 +7,6 @@ module.exports = {
 		"@indiekit/preset-jekyll",
 		"@indiekit/store-github",
 		"@indiekit/syndicator-mastodon",
-		"@indiekit/endpoint-syndicate",
 	],
 	publication: {
 		me: "https://lucascherkewski.com",
